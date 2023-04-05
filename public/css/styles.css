@@ -1,0 +1,121 @@
+html {
+  position: relative;
+  min-height: 100%;
+  background-color: #E4E9FD;
+  background-image: -webkit-linear-gradient(65deg, #E4E9FD 50%, #ffffff 50%);
+  /* min-height: 1000px; */
+  font-family: 'helvetica neue';
+}
+
+
+body {
+  margin-bottom: 160px; /* height of the footer */
+  background: transparent;
+}
+
+/*--------------------- Navbar -----------------------*/
+
+.navbar {
+    width: 90%;
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    padding: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px auto;
+    letter-spacing: 4px;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-left: 10px;
+  }
+  
+  .nav-link {
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+  .nav-link:hover {
+    color: #1abc9c;
+  }
+  
+  .navbar-toggler-icon {
+    color: #333;
+  }
+  
+  @media (max-width: 767px) {
+    .navbar-nav {
+      margin-top: 10px;
+    }
+    
+    .navbar-nav .nav-item {
+      margin: 0 0 10px;
+    }
+  }
+  
+  /*----------------------- body ------------------------------*/
+  .container {
+    width: 90%;
+    margin: 7px auto;
+  }
+  /*--------------------- footer ----------------------*/
+  #footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #69ceba;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+.bottom-container {
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footer-image {
+    width: 2%;
+    /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); */
+}
+
+.footer-link {
+    color: #11999E;
+    margin: 20px;
+}
+
+.footer-link:hover {
+    color: #BADA55;
+}
+
+.footer-link img {
+    transition: transform 0.5s ease;
+}
+
+.footer-link:hover img {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-image {
+        width: 10%;
+    }
+}
