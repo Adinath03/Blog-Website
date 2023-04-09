@@ -5,11 +5,11 @@
     <form action="/compose" method="post">
         <div class="mb-3">
             <label for="postTitle" class="form-label">Title</label>
-            <input type="text" class="form-control" name="postTitle" aria-describedby="Title">
+            <input type="text" class="form-control" name="postTitle" aria-describedby="Title" required>
         </div>
         <div class="mb-3">
             <label for="postContent" class="form-label">Post</label>
-            <textarea class="form-control" name="postContent" rows="4"></textarea>
+            <textarea class="form-control" name="postContent" rows="4" required></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Publish</button>
     </form>
