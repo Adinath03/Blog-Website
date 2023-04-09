@@ -19,9 +19,6 @@ const aboutContent =
 const contactContent =
   "If you have any questions or suggestions, please feel free to reach out to me using the contact form below. I'm always happy to hear from my readers and to help out in any way that I can. You can also follow me on social media to stay up to date with my latest projects and adventures. Thank you for visiting my blog, and I look forward to hearing from you!";
 
-//Connecting mongodb with app
-// mongoose.connect('mongodb://127.0.0.1:27017/blogDB');
-
 //connecting with mongoose atlas
 mongoose.connect(`mongodb+srv://${process.env.ADMIN_USERNAME}:${process.env.ADMIN_PASSWORD}@cluster0.sdwodvq.mongodb.net/todolistDB?retryWrites=true&w=majority`, {
   useNewUrlParser: true,
