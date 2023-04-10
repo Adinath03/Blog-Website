@@ -78,7 +78,7 @@ app.get("/compose", function (req, res) {
   res.render("compose");
 });
 
-app.post("/compose", function (req, res) {
+app.post("/compose", async function (req, res) {
   const title = req.body.postTitle;
   const content = req.body.postContent;
 
@@ -86,8 +86,7 @@ app.post("/compose", function (req, res) {
     title: title,
     content: content
   });
-
-  newPost.save();
+  await newPost.save();
   res.redirect("/");
 });
 
